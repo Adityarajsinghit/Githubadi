@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple HR Email Response Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Simple HR Email Response Tool</h2>
+
+        <label>Candidate Name</label>
+        <input type="text" id="name" placeholder="Enter candidate name">
+
+        <label>Email Type</label>
+        <select id="type">
+        <option value="interview">Interview Invitation</option>
+        <option value="rejection">Rejection Email</option>
+        <option value="offer">Job Offer</option>
+    </select>
+
+        <button onclick="generateEmail()">Generate Email</button>
+
+        <label>Generated Email</label>
+        <textarea id="output" readonly></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
